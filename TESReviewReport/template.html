@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>CDM - Daily report</title>
+    <style type="text/css">
+        body
+        {
+            font-family: Arial;
+            background-color: white;
+        }
+
+        h1{
+            text-align:center;
+            font-size:xx-large;
+        }
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table.twoinrow{
+            padding: 0.5em;
+
+        }
+
+        table{
+            
+        }
+
+        .graphtable{
+            padding: 500px;
+            height: 500px;
+            border-collapse:collapse;
+            border-width: 1px;
+            border-style:solid;
+        }
+
+        table tr td{
+            padding: 0.5em;
+            border-style: solid;
+            border-width:1px;
+            border-color:gray;
+
+        }
+
+        thead
+        {
+            background-color: black;
+            color:white;
+            padding:0.5em;
+        }
+
+        .reportDateStyle
+        {
+            padding:10px;
+            text-decoration: none;
+            pointer-events: none;
+            color: white;
+        }
+
+        tbody{
+            background-color:transparent;
+            color:black;
+        }
+
+        .highlightedRow{
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        .lbl_wider {
+            background-color: {{widerColor}};
+        }
+
+        .lbl_smaller {
+            background-color: {{smallerColor}};
+        }
+
+        .lbl_unknown {
+            background-color: {{unknownFuelColor}};
+        }
+
+        .lbl_unknown_width{
+            background-color: {{unknownWidthColor}};
+        }
+
+        .left_relative {
+            text-align:center;
+            font-size:small;
+        }
+
+        .lbl_petrol {
+            background-color: {{petrolColor}};
+        }
+
+        .lbl_diesel {
+            background-color: {{dieselColor}};
+        }
+
+        .lbl_electric {
+            background-color: {{electricColor}};
+        }
+
+        .lbl_hybrid {
+            background-color: {{hybridColor}};
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>CDM daily report</h1>
+<p class="left_relative">Client: {{CustomerName}}</p>
+<table align="center" cellspacing="2" style="border: none;"><tr style="border: none;"><td style="border: none;">
+<table class="graphtable">
+    <thead>
+        <tr>
+            <th colspan=3><label class="reportDateStyle">Vehicle Dimensions Report</label></th>
+        </tr>
+        <tr>
+            <th colspan=3><label class="reportDateStyle">{{StartDate}} to {{EndDate}}</label></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Vehicles in total</td><td>{{n_total_vehicles}}<br />{{p_total_vehicles}}%</td>
+            <td rowspan="4">
+                <img src='Images/widthChart.png' "width=100%" alt="chart" class="center" />
+            </td>
+        </tr>
+        <tr><td>Vehicle confirmed over 2.2 metres</td><td>{{n_vehicles_larger_220}}<br/>{{p_vehicles_larger_220}}%</td></tr>
+        <tr><td>Vehicle Confirmed under 2.2 metres wide</td><td>{{n_vehicles_smaller_220}}<br/>{{p_vehicles_smaller_220}}%</td></tr>
+        <tr><td>Vehicle with unknown width(*)</td><td>{{n_vehicles_smaller_220}}<br/>{{p_vehicles_smaller_220}}%</td></tr>
+        <tr class="highlightedRow"><td></td><td></td>
+        <td rowspan="1" class="highlightedRow">
+                <code class="lbl_wider">&nbsp;</code>&nbsp;Vehicles over 2.2m<br />
+                <code class="lbl_smaller">&nbsp;</code>&nbsp;Vehicles under 2.2m<br />
+                <code class="lbl_unknown_width">&nbsp;</code>&nbsp;Vehicles width not known<br />
+        </td></tr>
+    </tbody>
+</table>
+</td><td style="border: none;">
+<table class="graphtable">
+    <thead>
+        <tr>
+            <th colspan=3><label class="reportDateStyle">Vehicle Fuel Type Report</label></th>
+        </tr>
+        <tr>
+            <th colspan=3><label class="reportDateStyle">{{StartDate}} to {{EndDate}}</label></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Vehicles in total</td><td>{{n_total_vehicles}}<br />{{p_total_vehicles}}%</td>
+            <td rowspan="5">
+                <img src='Images/fuelChart.png' "width=100%" alt="chart"/>
+            </td>
+        </tr>
+        <tr><td>Petrol</td><td>{{n_petrol}}<br/>{{p_petrol}}%</td></tr>
+        <tr><td>Diesel</td><td>{{n_diesel}}<br/>{{p_diesel}}%</td></tr>
+        <tr><td>Hybrid</td><td>{{n_hybrid}}<br/>{{p_hybrid}}%</td></tr>
+        <tr><td>Electrical</td><td>{{n_electric}}<br/>{{p_electric}}%</td></tr>
+        <tr><td>Unknown<sup>(*)</sup></td><td>{{n_unknown}}<br/>{{p_unknown}}%</td>
+        <td rowspan="1" class="highlightedRow">
+                <code class="lbl_petrol">&nbsp;</code>&nbsp;Petrol<br />
+                <code class="lbl_diesel">&nbsp;</code>&nbsp;Diesel<br />
+                <code class="lbl_electric">&nbsp;</code>&nbsp;Electrical<br />
+                <code class="lbl_hybrid">&nbsp;</code>&nbsp;Hybrid<br />
+                <code class="lbl_unknown">&nbsp;</code>&nbsp;Unknown<br />
+        </td></tr>
+    </tbody>
+</table>
+</td></tr></table>
+<br />
+<br />
+<br />
+<img src="Images/timeGraph.png" class="center" width="100%" alt="Histogram Showing Count against each hour in given day(s)">
+<br />
+<br />
+<br />
+<sup>(*)</sup> Unknown due to no DVLA link currently active. This can lead to high amounts of unknown data but with DVLA link active in future should only consist of foreign vehicles<br />
+</body>
+</html>

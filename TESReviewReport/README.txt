@@ -1,0 +1,1 @@
+This poject collects data from a database, computes it into a pie chart and saves that as an image and then creates an HTML document using a template and variables
