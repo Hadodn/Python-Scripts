@@ -45,8 +45,8 @@ def create_pie_chart(values, pie_color, bg_color, image_size, imagename):
     #Scale down with interpolation.
     im = im.resize((int(image_size[0] / scale), int(image_size[1] / scale)), resample=Image.ANTIALIAS)
     currentdir = os.path.dirname(__file__)
-    filename = os.path.join(currentdir, '\TESReviewReport/Images/'+imagename)
-    directory = os.path.join(currentdir, '\TESReviewReport/Images')
+    filename = currentdir + '\Images/' + imagename
+    directory = currentdir + '\Images'
     if not os.path.exists(directory):
         os.makedirs(directory)
     im.save(filename + ".png", format='PNG')
@@ -68,8 +68,8 @@ def create_line_chart(values, imagename):
 
     # Export Line Graph to image
     currentdir = os.path.dirname(__file__)
-    filename = os.path.join(currentdir, '\TESReviewReport/Images/' + imagename)
-    directory = os.path.join(currentdir, '\TESReviewReport/Images')
+    filename = currentdir + '\Images/' + imagename
+    directory = currentdir + '\Images'
     if not os.path.exists(directory):
         os.makedirs(directory)
     plt.savefig(filename + ".png", dpi=600)

@@ -146,9 +146,22 @@ def generate_report(data: GraphRawData):
     time = datetime.now()
 
     name = "export/Automated Report " + str(time.date()) + "--" + str(time.hour) + "-" + str(time.minute) \
-           + "-" + str(time.second) + ".pdf"
+           + "-" + str(time.second)
 
-    pdfkit.from_file("report.html", name)
+    pdfkit.from_file("report.html", name + ".pdf")
+
+    with open(name + ".csv", 'w') as file:
+        file.write("Total Number of Vehicles, "+str(v['n_total_vehicles']))
+        file.write("\nNumber of Vehicles Larger than 2.2 metres, " + str(v['n_vehicles_larger_220']))
+        file.write("\nNumber of Vehicles Smaller than 2.2 metres, " + str(v['n_vehicles_smaller_220']))
+        file.write("\nNumber of Vehicles with Unknown Size, " + str(v['n_unknown_size']))
+        file.write("\nPetrol, " + str(v['n_petrol']))
+        file.write("\nDiesel, " + str(v['n_diesel']))
+        file.write("\nHybrid, " + str(v['n_hybrid']))
+        file.write("\nElectrical, " + str(v['n_electric']))
+        file.write("\nUnknown fuel, " + str(v['n_unknown_fuel']))
+
+
 
     # Clear up directory by removing un needed files
     if os.path.exists("Report.html"):

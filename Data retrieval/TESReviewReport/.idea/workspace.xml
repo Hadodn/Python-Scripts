@@ -14,8 +14,8 @@
       <file leaf-file-name="piechart.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/piechart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+            <state relative-caret-position="1003">
+              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
               <folding>
                 <element signature="e#26#70#0" expanded="true" />
               </folding>
@@ -26,19 +26,10 @@
       <file leaf-file-name="extractdata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extractdata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2210">
+            <state relative-caret-position="2448">
               <caret line="152" column="60" selection-start-line="152" selection-start-column="60" selection-end-line="152" selection-end-column="60" />
               <folding>
                 <element signature="e#27#42#0" expanded="true" />
-                <element signature="e#4702#4718#0" />
-                <element signature="e#4693#5896#0" />
-                <element signature="e#9411#11022#0" />
-                <element signature="e#6497#7142#0" />
-                <element signature="e#10608#11416#0" />
-                <element signature="e#7977#8648#0" />
-                <element signature="e#8732#9407#0" />
-                <element signature="e#9489#10160#0" />
-                <element signature="e#10248#10958#0" />
               </folding>
             </state>
           </provider>
@@ -47,11 +38,10 @@
       <file leaf-file-name="compliancereport.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/compliancereport.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
+            <state relative-caret-position="441">
+              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
               <folding>
                 <element signature="e#106#121#0" expanded="true" />
-                <element signature="e#6059#6932#0" />
               </folding>
             </state>
           </provider>
@@ -66,6 +56,7 @@
         <option value="$PROJECT_DIR$/piechart.py" />
         <option value="$PROJECT_DIR$/extractdata.py" />
         <option value="$PROJECT_DIR$/compliancereport.py" />
+        <option value="D:/tes.review.server.exensions.stats_report/setup.py" />
       </list>
     </option>
   </component>
@@ -79,6 +70,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,7 +82,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,14 +162,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32943678" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -203,6 +193,36 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/piechart.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+          <folding>
+            <element signature="e#26#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extractdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="152" column="60" selection-start-line="152" selection-start-column="60" selection-end-line="152" selection-end-column="60" />
+          <folding>
+            <element signature="e#27#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compliancereport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2516">
+          <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
+          <folding>
+            <element signature="e#106#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/piechart.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
           <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
           <folding>
@@ -216,15 +236,6 @@
         <state>
           <folding>
             <element signature="e#27#42#0" expanded="true" />
-            <element signature="e#4702#4718#0" />
-            <element signature="e#4693#5896#0" />
-            <element signature="e#9411#11022#0" />
-            <element signature="e#6497#7142#0" />
-            <element signature="e#10608#11416#0" />
-            <element signature="e#7977#8648#0" />
-            <element signature="e#8732#9407#0" />
-            <element signature="e#9489#10160#0" />
-            <element signature="e#10248#10958#0" />
           </folding>
         </state>
       </provider>
@@ -235,7 +246,6 @@
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="e#106#121#0" expanded="true" />
-            <element signature="e#6059#6932#0" />
           </folding>
         </state>
       </provider>
@@ -280,13 +290,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/TESReviewReport - BACKUP/piechart.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="56" selection-start-line="56" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../TESReviewReport - BACKUP/piechart.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/cairocffi/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -315,13 +319,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/cdmreport/compliancereport.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="193" selection-start-line="193" selection-end-line="203" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/cdmreport/compliancereport.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/487400444/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -331,40 +329,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/extractdata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
+        <state relative-caret-position="2448">
           <caret line="152" column="60" selection-start-line="152" selection-start-column="60" selection-end-line="152" selection-end-column="60" />
           <folding>
             <element signature="e#27#42#0" expanded="true" />
-            <element signature="e#4702#4718#0" />
-            <element signature="e#4693#5896#0" />
-            <element signature="e#9411#11022#0" />
-            <element signature="e#6497#7142#0" />
-            <element signature="e#10608#11416#0" />
-            <element signature="e#7977#8648#0" />
-            <element signature="e#8732#9407#0" />
-            <element signature="e#9489#10160#0" />
-            <element signature="e#10248#10958#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/piechart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+        <state relative-caret-position="1003">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
           <folding>
             <element signature="e#26#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../File Manipulation/Read and Write JSON-XML.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/tes.review.server.exensions.stats_report/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/compliancereport.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
+        <state relative-caret-position="441">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
           <folding>
             <element signature="e#106#121#0" expanded="true" />
-            <element signature="e#6059#6932#0" />
           </folding>
         </state>
       </provider>
